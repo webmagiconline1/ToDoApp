@@ -1,4 +1,4 @@
-# Todo Application
+# Todo Application - Bug Fixed
 
 This is a simple Todo application built with Python. It allows users to create, view, and manage their todo items.
 
