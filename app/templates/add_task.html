@@ -1,3 +1,4 @@
+<!-- filepath: todoapp/app/templates/add_task.html -->
 {% extends 'base.html' %}
 
 {% block content %}
@@ -14,6 +15,9 @@
     </p>
     <p>
         {{ form.done() }} {{ form.done.label }}
+    </p>
+    <p>
+        {{ form.recaptcha }}
     </p>
     <p>{{ form.submit() }}</p>
 </form>
