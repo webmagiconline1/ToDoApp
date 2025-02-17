@@ -1,16 +1,7 @@
-from django.db import models
+from . import db
 
-class Todo(models.Model):
-    title = models.CharField(max_length=200)
-    completed = models.BooleanField(default=False)
-
-    def __str__(self):
-        return self.title
-
-    def mark_completed(self):
-        self.completed = True
-        self.save()
-
-    def mark_incomplete(self):
-        self.completed = False
-        self.save()
+class Task(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.String(200), nullable=True)
+    done = db.Column(db.Boolean, default=False)

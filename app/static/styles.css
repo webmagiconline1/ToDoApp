@@ -2,54 +2,32 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    color: #333;
-}
-
-.todo-list {
-    list-style-type: none;
     padding: 0;
 }
 
-.todo-item {
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
     background: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
 }
 
-.todo-item.completed {
-    text-decoration: line-through;
-    color: #aaa;
+a {
+    text-decoration: none;
+    color: #333;
 }
 
-.add-todo-form {
-    display: flex;
-    margin-top: 20px;
-}
-
-.add-todo-form input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.add-todo-form button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.add-todo-form button:hover {
-    background-color: #218838;
+a:hover {
+    color: #007BFF;
 }
